@@ -1,47 +1,34 @@
 import React from "react";
-import { ScrollView, View } from "react-native";
-import Header from "./Components/Header";
-import Banner from "./Components/Banner";
-import Search from "./Components/Search";
-import Section from "./Components/Section";
-import TrendingFood from "./Components/trending/trendingFood";
-import Restaurant from "./Components/restaurants/restaurant";
-import RestaurantVertical from "./Components/restaurants/restaurantsVertical";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createStackNavigator } from "@react-navigation/stack";
+import Inicial from "./Components/Inicial/Inicial";
+import Login from "./Components/Inicial/Login";
+import Register from "./Components/Inicial/Register";
+import Home from "./Routes/Home";
+
+const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
+
+const InicialStack = () => {
+  return (
+    <Stack.Navigator initialRouteName="Inicial">
+      <Stack.Screen name="Inicial" component={Inicial} />
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Register" component={Register} />
+    </Stack.Navigator>
+  );
+};
 
 const App = () => {
   return (
-    <ScrollView style={{ flex: 1, backgroundColor: 'white' }} showsVerticalScrollIndicator={false}>
-      <View>
-        <Header />
-        <Banner />
-        <Search />
-      </View>
-      
-      <Section
-        name="Comidas em alta"
-        label="Veja mais"
-        action={() => console.log('Mostrar algo')}
-      />
-
-      <TrendingFood />
-
-      <Section
-        name="Famosas no devFood"
-        label="Veja todos"
-        action={() => console.log('Mostrar algo')}
-      />
-
-      <Restaurant/>
-
-      <Section
-        name="Restaurantes famosos de BH"
-        label="Veja os Principais"
-        action={() => console.log('Mostrar algo')}
-      />
-
-      <RestaurantVertical/>
-
-    </ScrollView>
+    <NavigationContainer>
+      <Tab.Navigator initialRouteName="InicialStack">
+        <Tab.Screen name="Inicial" component={InicialStack} />
+        <Tab.Screen name="Home" component={Home} />
+    
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 };
 
