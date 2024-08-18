@@ -109,5 +109,80 @@
       "name": "Vecchio Sogno",
       "image": "https://cumbucca.com.br/wp-content/uploads/2020/11/cumbucca-vecchio-sogno2.jpg"
     }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "Mega Saldão",
+      "backgroundColor": "#000000",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3PZfMjrqm0C7BsFbp6XRVTvYDwB2um_fzaQ&s"
+    },
+    {
+      "id": "2",
+      "title": "Mercado",
+      "backgroundColor": "#236E25",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK_qbxOjyAxZ2Q4pv4V7P4LGcBxfPQiVbVlQ&s"
+    },
+    {
+      "id": "3",
+      "title": "Farmácia",
+      "backgroundColor": "#F86F2F",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJIDe6l_SkpFo6Gj0UPflwKl6JNiZssAaIA&s"
+    },
+    {
+      "id": "4",
+      "title": "Bebidas",
+      "backgroundColor": "#F86F2F",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9hUBr6iybFO9gpC4FNCu4qBiAT-IPQjw2Q&s"
+    },
+    {
+      "id": "5",
+      "title": "Pet",
+      "backgroundColor": "#236E25",
+      "image": "https://petcaesecia.fbitsstatic.net/img/b/364e499d-431c-4da2-b8cb-4a0048044658.png"
+    },
+    {
+      "id": "6",
+      "title": "Shopping",
+      "backgroundColor": "#FFAF00",
+      "image": "https://www.syn.com.br/wp-content/uploads/2023/09/entrada1_5-2.webp"
+    },
+    {
+      "id": "7",
+      "title": "Comer Fora",
+      "backgroundColor": "#FF0000",
+      "image": "https://s2-valor-investe.glbimg.com/Iluo55jlDV_NJk7730s_JoL79SU=/0x0:2121x1414/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2019/o/I/QtnCnNQB6cN1IwEoFX7w/gettyimages-1059836206.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Açaí",
+      "backgroundColor": "#7B68EE",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzPsSBU2MEPbKgvWKeNkTeZbe5tWmzDn8R7g&s"
+    },
+    {
+      "id": "9",
+      "title": "Restaurantes Super",
+      "backgroundColor": "#FF0000",
+      "image": "https://images.squarespace-cdn.com/content/v1/63f43d142ca5b901ed5c2dbd/b12b4d22-bf23-4e31-928d-ee335a8d6a64/350108913_657480899710179_1300520691714521453_n.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Doces & Bolos",
+      "backgroundColor": "#FF7F50",
+      "image": "https://cdn.folhape.com.br/upload/dn_arquivo/2022/12/sodie-natal3.jpeg"
+    },
+    {
+      "id": "11",
+      "title": "Salgados",
+      "backgroundColor": "#FF0000",
+      "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-salgados-para-festa.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Pastel",
+      "backgroundColor": "#FFD700",
+      "image": "https://redefoodservice.com.br/wp-content/uploads/2023/05/Massa-de-Pastel-de-Feira.jpg"
+    }
   ]
+
 }

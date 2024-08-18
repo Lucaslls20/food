@@ -10,12 +10,12 @@ const CardHorizontalFood = ({ food }) => {
                 style={{ width: 150, height: 100, borderRadius: 12 }}
             />
             <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8 }}>
-                <Icon size={14} color='#ca8a04' name="star" />
-                <Text style={{ fontSize: 12, color: '#ca8a04', marginLeft: 4 }}>{food.rating}</Text>
+              <Text style={{fontSize:14}}>⭐</Text>
+                <Text style={{ fontSize: 12, color: 'black', marginLeft: 4 }}>{food.rating}</Text>
             </View>
             <Text style={{ fontSize: 18, color: 'green', fontWeight: 'bold', marginTop: 4 }}>R${food.price.toFixed(2)}</Text>
             <Text style={{ fontSize: 14, color: 'black', fontWeight: '600', marginTop: 4 }}>{food.name}</Text>
-            <Text style={{ fontSize: 12, color: 'red', marginTop: 2 }}>{food.time} - R${food.delivery.toFixed(2)}</Text>
+            <Text style={{ fontSize: 12, color: 'white', marginTop: 2 }}>{food.time} - R${food.delivery.toFixed(2)}</Text>
         </Pressable>
     );
 };

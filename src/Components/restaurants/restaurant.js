@@ -8,9 +8,13 @@ const Restaurant = () => {
 
     useEffect(() => {
         async function getRestaurants(){
+            try{
             const response = await fetch('http://10.0.0.4:3000/restaurants')
             const data = await response.json()
             setFoods(data)
+            }catch(err){
+                console.log('Ops algo deu errado', {err})
+            }
         }
         getRestaurants()
     },[])

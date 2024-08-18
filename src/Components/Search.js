@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, TextInput } from "react-native";
+import { View, TextInput, Text } from "react-native";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const Search = () => {
@@ -7,7 +7,7 @@ const Search = () => {
 
     return (
         <View style={styles.container}>
-            <Icon name="search" size={24} color="#5f6368" />
+            <Text style={{fontSize:24}}>🔍</Text>
             <TextInput
                 placeholder="Procure sua comida..."
                 style={styles.input}
@@ -37,6 +37,7 @@ const styles = {
         height: '100%',
         color: 'black',
         marginLeft: 8,
+        borderColor:'gray',
     }
 };
 

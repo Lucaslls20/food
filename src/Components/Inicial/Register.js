@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
-const Register = () => {
+const Register = ({ navigation, handleRegister, handleLogin }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -11,7 +10,7 @@ const Register = () => {
             <Text style={styles.title}>Register</Text>
             
             <View style={styles.inputContainer}>
-                <Icon name="envelope" size={20} color="#fff" style={styles.icon} />
+            <Text style={{fontSize:20, marginRight:10}}>✉️</Text>
                 <TextInput 
                     value={email}
                     placeholder="Digite seu E-mail"
@@ -22,7 +21,7 @@ const Register = () => {
             </View>
 
             <View style={styles.inputContainer}>
-                <Icon name="lock" size={20} color="#fff" style={styles.icon} />
+            <Text style={{fontSize:20, marginRight:10}}>🔒</Text>
                 <TextInput 
                     placeholder="Digite sua senha"
                     placeholderTextColor="#fff"
@@ -33,12 +32,12 @@ const Register = () => {
                 />
             </View>
             
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => handleRegister(email, password)}>
                 <Text style={styles.buttonText}>Registrar</Text>
             </TouchableOpacity>
 
             <View style={styles.linkContainer}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                     <Text style={styles.linkText}>Já tem uma conta? Faça login</Text>
                 </TouchableOpacity>
             </View>

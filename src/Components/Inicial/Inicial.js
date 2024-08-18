@@ -5,9 +5,9 @@ const Inicial = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>DevFood</Text>
-            <Image source={{ uri: '' }} style={styles.logo} />
-            <Text style={styles.title}>iFood para Entregadores</Text>
-            <Text style={styles.subtitle}>arraste para conhecer</Text>
+            <Image  source={{ uri: 'https://logowik.com/content/uploads/images/free-food-delivery6258.logowik.com.webp' }} style={styles.logo} />
+            <Text style={styles.title}>iFood para a Rapaziada</Text>
+            <Text style={styles.subtitle}>Coisas novas a todo momento</Text>
 
             <View style={styles.pagination}>
                 <View style={[styles.dot, styles.activeDot]} />
@@ -24,7 +24,7 @@ const Inicial = ({ navigation }) => {
                 <Text style={[styles.buttonText, styles.registerButtonText]}>CADASTRAR</Text>
             </TouchableOpacity>
 
-            <Text style={styles.versionText}>Versão 2.0.9</Text>
+            <Text style={styles.versionText}>Versão 0.0.1</Text>
             <Text style={styles.footerText}>Essa é a tela inicial de cadastro no app!</Text>
         </View>
     );
@@ -39,9 +39,11 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     logo: {
-        width: 100,
-        height: 100,
+        width:'100%',
+        height: 250,
         marginBottom: 20,
+        borderRadius:30,
+        marginTop:10
     },
     title: {
         color: '#fff',
@@ -102,6 +104,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginTop: 5,
     },
+    imageLogo:{
+        width:'100%'
+    }
 });
 
 export default Inicial;
