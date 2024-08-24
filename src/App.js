@@ -12,6 +12,8 @@ import { doc, setDoc, getDoc } from "firebase/firestore";
 import { auth } from "../firebaseConfig";
 import { db } from "../firebaseConfig";
 import Search from "./Routes/Search";
+import Request from "./Routes/Requested";
+import Profile from "./Routes/Profile";
 
 
 const Stack = createStackNavigator();
@@ -102,6 +104,17 @@ const handleLogout = async () => {
         tabBarLabel: '🔍 Search',
         tabBarIcon: () => null
       }}/>
+ 
+     <Tab.Screen name='Request' component={Request} options={{
+      tabBarLabel: '📝 Requests', 
+      tabBarIcon:() => null
+     }} />
+     
+     <Tab.Screen name='Profile' component={Profile} options={{
+      tabBarLabel: '📇 Profile', 
+      tabBarIcon:() => null
+     }} />
+
       {/* Adicione outras telas que você queira mostrar após a autenticação */}
     </Tab.Navigator>
   );
